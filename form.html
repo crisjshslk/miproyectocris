@@ -1,26 +1,23 @@
 <!-- FORMULARIO DE CONTACTO -->
 <div class="formulario">
-  <form action="http://localhost:3000/guardar" method="POST">
-    <!-- CONTACTO -->
-    <section class="contacto" id="contacto">
-      <h2>Contáctanos</h2>
-      <p>📍 Jilotepec, Estado de México</p>
-      <p>📞 Teléfono: +52 55 7294 1897</p>
-      <div class="redes-sociales">
-        <a href="https://www.instagram.com/fashion_style010?igsh=MWZjM20zdGV0NzdwOA==" target="_blank" class="instagram">Instagram</a>
-        <a href="https://www.facebook.com/share/1EeCGNQPsb/" target="_blank" class="facebook">Facebook</a>
-      </div>
-    </section>
+  <section class="contacto" id="contacto">
+    <h2>Contáctanos</h2>
+    <p>📍 Jilotepc, Estado de México</p>
+    <p>📞 Teléfono: +52 55 7294 1897</p>
+    <div class="redes-sociales">
+      <a href="https://www.instagram.com/fashion_style1010?igs=MWZjM20zdGV0NzdwOA==" target="_blank" class="instagram">Instagram</a>
+      <a href="https://www.facebook.com/share/lEeGNQOpsb/" target="_blank" class="facebook">Facebook</a>
+    </div>
+  </section>
 
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" required>
+  <!-- Aquí va tu formulario Netlify -->
+  <form name="contacto" method="POST" data-netlify="true" action="gracias.html">
+    <!-- Campo oculto obligatorio -->
+    <input type="hidden" name="form-name" value="contacto">
 
-    <label for="correo">Correo:</label>
-    <input type="email" id="correo" name="correo" required>
-
-    <label for="mensaje">Mensaje:</label>
-    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-
+    <input type="text" name="nombre" placeholder="Tu nombre" required>
+    <input type="email" name="correo" placeholder="Tu correo" required>
+    <textarea name="mensaje" placeholder="Tu mensaje"></textarea>
     <button type="submit">Enviar</button>
   </form>
 </div>
